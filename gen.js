@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hey binches</h1>
-<sub>round 2</sub>
 
-<p>Click the button to replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+<center>
+<h1>FR COLI PORTRAIT GENERATOR</h1>
 
-<p id="demo">Visit Microsoft!</p>
+<p>Paste your dragon's image url where it says INSERTURL. Please remove the string of numbers after .png.</p>
+<p>EXAMPLE:</p>
+<sub><p>http://flightrising.com/rendern/350/302946/30294592_350.png<font color="red">?mtime=W1fNgQADPp8</font></p>
+<p>http://flightrising.com/rendern/350/302946/30294592_350.png</p></sub>
+-----
+<font color="blue"><p id="demo">INSERTURL</p></font>
+-----
+<p>Then click the green "Run" button above, and then press the button. Then just copy the new image code and you're done!</p>
 
-<button onclick="myFunction()">Try it</button>
+<button onclick="myFunction()">Generate!</button>
 
 <script>
 function myFunction() {
     var str = document.getElementById("demo").innerHTML; 
-    var res = str.replace("Microsoft", "W3Schools");
+    var res = str.replace("_350", "");
+    document.getElementById("demo").innerHTML = res;
+    var str = document.getElementById("demo").innerHTML; 
+    var res = str.replace("/350", "/coliseum/portraits");
     document.getElementById("demo").innerHTML = res;
 }
 </script>
